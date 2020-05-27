@@ -7,7 +7,7 @@ package ca.sheridancollege.week1.softwarefundamentals;
 
 /**
  *
- * @author DELL -- May 2020
+ * @author DELL
  */
 public class Student {
     
