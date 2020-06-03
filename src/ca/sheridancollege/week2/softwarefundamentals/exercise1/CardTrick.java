@@ -30,6 +30,29 @@ public class CardTrick {
             c.setSuit(c.SUITS[k]);
             magicHand[i]=c;
         }
+       
+       Card luckyCard=new Card();
+        luckyCard.setValue(2);
+        luckyCard.setSuit("SPADE");
+        
+        boolean win=false;
+        
+        for(int i=0;i<magicHand.length;i++)
+        {
+            if(magicHand[i].getValue()==luckyCard.getValue()&& magicHand[i].getSuit().equals(luckyCard.getSuit()) )
+            {
+                win=true;
+            }
+        }
+        
+        if(win)
+        {
+            System.out.println("YOU WON!!:)");
+        }
+        else
+        {
+            System.out.println("YOU LOOSE!!:(");
+        }
     }
     
 }
